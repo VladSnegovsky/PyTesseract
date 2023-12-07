@@ -63,7 +63,7 @@ def opencl_contrast_change(img_path, contrast_multiplier):
     contrast_processed_image = _enhance_contrast_opencl(image, contrast_multiplier)
 
     # Збереження обробленого зображення
-    output_path_contrast = '/Users/vladsnegovsky/Documents/University/Year2/Диплом/openCL_image/image_contrast.jpg'
+    output_path_contrast = '/Users/vladsnegovsky/Documents/University/Year2/Tesseract/openCL_image/image_contrast.png'
     cv2.imwrite(output_path_contrast, contrast_processed_image)
 
     return output_path_contrast
@@ -135,7 +135,7 @@ def opencl_apply_blur(img_path, kernel_size):
     blur_processed_image = _apply_blur_opencl(image, kernel_size)
 
     # Збереження обробленого зображення
-    output_path_blur = '/Users/vladsnegovsky/Documents/University/Year2/Диплом/openCL_image/image_blur.jpg'
+    output_path_blur = '/Users/vladsnegovsky/Documents/University/Year2/Tesseract/openCL_image/image_blur.png'
     cv2.imwrite(output_path_blur, blur_processed_image)
 
     return output_path_blur
@@ -200,7 +200,7 @@ def opencl_enhance_brightness(img_path, brightness_multiplier):
     brightened_image = _enhance_brightness_opencl(image, brightness_multiplier)
 
     # Збереження обробленого зображення
-    output_path_contrast = '/Users/vladsnegovsky/Documents/University/Year2/Диплом/openCL_image/image_brightness.jpg'
+    output_path_contrast = '/Users/vladsnegovsky/Documents/University/Year2/Tesseract/openCL_image/image_brightness.png'
     cv2.imwrite(output_path_contrast, brightened_image)
 
     return output_path_contrast

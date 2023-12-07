@@ -32,19 +32,19 @@ def recognize_handwritten_text(image_path):
     return text
 
 # Provide the path to your handwritten image
-image_path = '/Users/vladsnegovsky/Documents/University/Year2/Диплом/text1.png'
+image_path = '/Users/vladsnegovsky/Documents/University/Year2/Tesseract/text2.png'
 
 # cntrst = 1.5
 # image_opencl_contrast = opencl_contrast_change(image_path, cntrst)
-brightness = 2
-brightness_image = opencl_enhance_brightness(image_path, brightness)
+# brightness = 2
+# brightness_image = opencl_enhance_brightness(image_path, brightness)
 # kernel_size = 1
 # image_opencl_blur = opencl_apply_blur(image_path, kernel_size)
 
 # Text recognition and result output
-result = recognize_handwritten_text(brightness_image)
+result = recognize_handwritten_text(image_path)
 print(result)
 
 # delete_image(image_opencl_contrast)
+# delete_image(brightness_image)
 # delete_image(image_opencl_blur)
-delete_image(brightness_image)

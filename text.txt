@@ -1,0 +1,48 @@
+Параметр `--psm`
+1. 0 (Orientation and script detection (OSD) only): Визначення орієнтації та скрипту, але не розпізнавання тексту. 
+    Цей режим використовується для визначення кута повороту та скрипту тексту без його фактичного розпізнавання.
+
+2. 1 (Automatic page segmentation with OSD): Автоматична сегментація сторінки з використанням OSD.
+
+3. 2 (Automatic page segmentation, but no OSD or OCR): Автоматична сегментація сторінки без використання OSD та без розпізнавання тексту. 
+    В цьому режимі Pytesseract лише розпізнає області, де може бути текст, але не розпізнає сам текст.
+
+4. 3 (Fully automatic page segmentation, but no OSD. (default)): Повністю автоматична сегментація сторінки без використання OSD, що є 
+    режимом за замовчуванням.
+
+5. 4 (Assume a single column of text of variable sizes): Припускати, що текст у документі складається з одного стовпця різного розміру.
+
+6. 5 (Assume a single uniform block of vertically aligned text): Припускати, що текст у документі складається з одного блоку, вирівняного 
+    вертикально.
+
+7. 6 (Assume a single uniform block of text): Припускати, що текст у документі складається з одного блоку.
+
+8. 7 (Treat the image as a single text line): Обробляти зображення як один рядок тексту.
+
+9. 8 (Treat the image as a single word): Обробляти зображення як одне слово.
+
+10. 9 (Treat the image as a single word in a circle): Обробляти зображення як одне слово, розташоване в колі.
+
+11. 10 (Treat the image as a single character): Обробляти зображення як окремі символи.
+
+12. 11 (Sparse text. Find as much text as possible in no particular order): Вирізняти рідкий текст.
+
+13. 12 (Sparse text with OSD): Вирізняти рідкий текст з використанням OSD.
+
+14. 13 (Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific): Обробляти зображення як один рядок 
+    тексту, обходячи особливості Tesseract.
+
+
+
+
+Параметр `--oem`
+
+1. 0 (Legacy OCR Engine): Використовує старий OCR Engine.
+
+2. 1 (Neural Nets LSTM OCR Engine): Використовує LSTM-модель для розпізнавання тексту. Це дозволяє отримати кращі результати на деяких типах 
+    тексту.
+
+3. 2 (OCR Engine Mode 2): Це також варіант, який використовує LSTM-модель, але із стандартними налаштуваннями.
+
+3. 3 (OCR Engine Mode 3): Це варіант, який використовує LSTM-модель, але з розширеними налаштуваннями, які можуть призвести до більш точного 
+    розпізнавання.
